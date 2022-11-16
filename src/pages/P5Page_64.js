@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import Product_xx from '../components/Product_64';
-import midterm_data_xx from '../midterm_data_xx';
+import midterm_data_64 from '../midterm_data_64';
 
 const P5Page_64 = () => {
-  const [products, setProducts] = useState(midterm_data_xx);
+  const [products, setProducts] = useState(midterm_data_64);
   console.log('products', products);
 
   return (
