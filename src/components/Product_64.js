@@ -1,4 +1,4 @@
-const Product_64 = ({id, img, name, price}) => {
+const Product_64 = ({id, img, title, price}) => {
   return (
     <>
       <div className="single-product" key={id}>
@@ -8,7 +8,7 @@ const Product_64 = ({id, img, name, price}) => {
           alt="high-back bench"
         />
         <footer>
-          <h5 className="name">{name}</h5>
+          <h5 className="name">{title}</h5>
           <span className="price">${price}</span>
         </footer>
       </div>

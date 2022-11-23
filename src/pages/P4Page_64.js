@@ -10,12 +10,10 @@ const P4Page_64 = () => {
     if (category == 'all') {
       setProducts(midterm_data_64);
     } else {
-      const newProducts = midterm_data_64.filter(
-        (product) => product.category === category
-      );
+      const newProducts = midterm_data_64.filter((product) => product.category === category);
       setProducts(newProducts);
     }
-  };
+  }
 
   return (
     <>
@@ -28,13 +26,13 @@ const P4Page_64 = () => {
             <h4>Company</h4>
             <article className="companies">
               <button className="company-btn"
-              onClick={() => filterItems("all")}>all</button>
+              onClick={() => filterItems('all')}>all</button>
               <button className="company-btn"
-              onClick={() => filterItems("ikea")}>ikea</button>
+              onClick={() => filterItems('Ikea')}>ikea</button>
               <button className="company-btn"
-              onClick={() => filterItems("marcos")}>marcos</button>
+              onClick={() => filterItems('Marcos')}>marcos</button>
               <button className="company-btn"
-              onClick={() => filterItems("caressa")}>caressa</button>
+              onClick={() => filterItems('Caressa')}>caressa</button>
             </article>
           </div>
         </div>
