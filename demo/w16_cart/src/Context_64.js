@@ -28,6 +28,18 @@ const AppProvider_64 = ({children}) => {
     dispatch({ type: 'INCREASE', payload: id });
   }
 
+  //2022-12-21
+  const decrease = (id) => {
+    dispatch({ type: 'DECREASE', 
+    payload: id });
+  }
+
+  //2022-12-21
+  const remove = (id) => {
+    dispatch({ type: 'REMOVE', payload:
+    id});
+  }
+
   //2022-12-21 
   const fetchData= async () => {
     dispatch({ type: 'LOADING' });
@@ -41,8 +53,10 @@ const AppProvider_64 = ({children}) => {
     fetchData();
   },[]);
 
-  return <AppContext_64.Provider value={{...state, clearCart, increase}}>
-     {children}
+  return <AppContext_64.Provider value={{
+    ...state, clearCart, 
+    increase, decrease, remove}}>
+  {children}
   </AppContext_64.Provider>
 };
 
