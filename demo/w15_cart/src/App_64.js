@@ -3,8 +3,9 @@ import React from 'react';
 // components
 import Navbar_64 from './components/Navbar_64';
 import CartContainer_64 from './components/CartContainer_64';
-import { useGlobalContext_64 } from './Context_64';
+
 // items
+import { useGlobalContext_64 } from './Context_64';
 
 const App_64 = () => {
   const {loading, cart } = useGlobalContext_64();
